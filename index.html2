@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IRPF - Janeiro/2024</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Calculadora IRPF</h2>
+    
+    <div class="form-group">
+        <label for="salario">Salário Mensal (R$):</label>
+        <input type="number" id="salario" step="0.01">
+    </div>
+
+    <div class="button-group">
+        <button id="calcular" onclick="processarCalculo()">Calcular</button>
+        <button id="limpar" onclick="limparCampos()">Limpar</button>
+    </div>
+
+    <div id="resultado" class="result">
+        <p><strong>Imposto Devido (IRPF):</strong> <span id="valIrpf">R$ 0,00</span></p>
+        <p><strong>Alíquota Efetiva:</strong> <span id="valAliquota">0,00%</span></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
